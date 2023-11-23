@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>dom</title>
+</head>
+<body>
+  <h4>JavaScript Paradigms:</h4>
+  <div id="box"></div>
+  <script>
+  const paradigms = ['POP', 'OOP', 'AP', 'FP', 'MP', 'AOP'];
+  const dom = ''
+    + '<ul>'
+      + paradigms.map(pgm=>`<li>${pgm}</li>`).join('')
+    + '</ul>';
+  console.log(dom);
+
+  document.querySelector('#box')
+          .innerHTML = dom;
+  </script>
+</body>
+</html>
